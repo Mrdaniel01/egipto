@@ -1,0 +1,256 @@
+/*  #4f8a8b verde
+    #ea907a naranja
+    #ffcb74 amarillo
+    #f4f6ff gris
+*/
+
+/* HEADER */
+
+:root{
+        /*MAIN COLOR*/
+    --green-color: #4f8a8b;
+    --yellow-color: #ffcb74;
+    --orange-color: #ea907a; 
+    --gray-color: #f4f6ff;
+    --white-color:white;
+        /*BOX SHADOW*/
+    --box: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.2)
+}
+html body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.index_container{
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+nav{
+    display:flex;
+    background:var(--yellow-color);
+    color: var(--white-color);
+    padding: 10px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav li{
+    padding-right: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--white-color);  
+    text-decoration: none;
+}
+
+nav li a:hover{
+    transform: scale(2);
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+/* HERO */
+
+
+.main_section{
+    padding:10%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    background-repeat:none;
+    background-size: cover;
+    background-position:center top;
+    height: 200px;
+    display: flex;
+    padding:15%;
+    justify-content: center;
+    
+}
+
+.product{
+    padding:10px;
+    margin-top:-160px;
+    max-width: 260px;
+}
+
+.product .content{        
+    padding: 20px;    
+    text-align: center;
+    border-radius:10px;
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.buttom{
+    width:80%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--orange-color);
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--white-color);
+    box-shadow: 2px 2px 5px 0.5px rgba(0, 0, 0, 0.2);
+}
+.buttom:hover{
+    background-color: var(--green-color);
+    transform: scale(1.3);
+}
+
+.home_features{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+    border-bottom:2px solid var(--gray-color)
+}
+
+.home_features_item{
+    max-width:170px;
+    padding:20px;
+
+}
+
+.home_features_item img{
+    max-width:100%;
+    height: auto;
+    text-align: center;
+}
+
+.home_features_item h3{
+    padding:20px 0px;
+} 
+
+.home_opinions{
+    display: flex;
+    justify-content:center;
+
+}
+
+h1{
+    text-align:center;
+    padding-bottom:10px
+}
+span {
+    padding:auto;
+    margin:10px;
+    max-width:239px;
+    box-shadow: var(--box);
+}
+span h3{
+    padding-left:5px;
+    margin: 5px 0;
+
+}
+span p{
+    padding-left:5px;
+    margin:5px 0;
+    font-size:.8em;
+}
+
+/*-----------------------------------------STORE*/
+
+.store_container{
+    display: flex;
+}
+.store_container div{
+    padding:5%;
+    width:100%;
+    margin:20px 20px;
+}
+.store_container_img{
+    box-shadow: var(--box);
+    max-width: 40%;
+    justify-content:center;
+}
+
+.img_store{
+    width: 50%;
+    margin:0 auto;
+    display: flex; 
+    
+}
+
+.store_container_inputs{
+    box-shadow: var(--box);    
+    padding: 10px;
+    max-width: 40%; 
+}
+
+
+.input{
+    border-radius: 5px;
+    border: 0;
+    background-color:var(--gray-color);
+    height: 25px;
+    margin-top: 10px;
+    padding:2% 2%;
+    width: 96%;
+}
+label{
+    font-size:0.8em;
+    margin-bottom:0px;
+}
+form{
+    width:100%;
+}
+
+.submit{
+    border-radius: 5px;
+    border:0;
+    text-align: center;
+    margin: 2%;
+    margin-top: 20%;
+    width:96%;
+    height: 35px;
+    background-color: var(--green-color);
+    align-self: center;
+    color: var(--white-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+.submit:hover{
+    transform:scale(1.1);
+    background-color: var(--orange-color);
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--yellow-color);
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.footer a{
+    
+    text-decoration: none;
+    color: var(--white-color);
+    padding:0px 20px;
+}
+
+.footer a:hover{
+    transform: scale(2);
+    color: var(--green-color);
+    font-weight: bold;
+}
