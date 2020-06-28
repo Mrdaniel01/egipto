@@ -199,6 +199,11 @@ span p{
     padding: 10px;
     max-width: 40%; 
 }
+.cont{
+    
+    padding: 20% 0;
+    align-content: center;
+}
 
 
 .input{
@@ -247,6 +252,10 @@ form{
     justify-content:space-between;
     align-items: center;
     margin-top: 0px;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
     
 }
 
